@@ -1,0 +1,198 @@
+    <html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>PAOLA ESQUINCA</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js" integrity="sha512-X/YkDZyjTf4wyc2Vy16YGCPHwAY8rZJY+POgokZjQB2mhIRFJCckEGc6YyX9eNsPfn0PzThEuNs+uaomE5CO6A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <link rel="stylesheet" href="css/style.css">
+      </head>
+
+    <body>
+        <div class="row mx-0"> <!-- Resets the margin -->
+          <div class="col-12 d-flex justify-content-center align-items-center" style="border-bottom: 2px solid #6c7ea4;">
+            <!-- Left Text aligned to left -->
+            <div class="me-auto pe-2"> <!-- Bootstrap's spacing classes used -->
+              PAOLA ESQUINCA
+            </div>
+            <!-- Centered Logo -->
+            <img src="img/logo.jpg" alt="Logo" class="img-fluid" style="max-height: 40px;">
+            <!-- Right Text aligned to right -->
+            <div class="ms-auto ps-2">
+              NUTRITION
+            </div>
+          </div>
+        </div>
+
+           <div class="row mx-0"> 
+            <div class="col-md-6" style="border-right: 2px solid #6c7ea4;border-bottom: 2px solid #6c7ea4;"> 
+                <button class="info-button" onclick="displayInfo('home',this)" style="color: #6c7ea4;"> <span class="bullet">⬤</span> HOME</button>
+            </div> 
+            <div id="textHERE" class="col-md-6" style="border-bottom: 2px solid #6c7ea4;">
+            </div> 
+        </div>
+    
+        <div class="row mx-0"> 
+            <div class="col-md-6" style="border-right: 2px solid #6c7ea4;border-bottom: 2px solid #6c7ea4;"> 
+                <button class="info-button" onclick="displayInfo('about', this)"> <span class="bullet">⬤</span> ABOUT</button>
+            </div> 
+            <div id="info" class="col-md-6" >
+                <div id="homeContent" class="content-section" style="display: block;">
+                    <span id="text1">
+                       WELCOME I’M PAOLA AND I’M HERE TO HELP YOU REBUILD YOUR RELATIONSHIP WITH FOOD.<br>
+                    <img id="foto" src="img/paola.jpg" width="140vh" style="margin:10%;"><br>
+                    <button class="info-button" id="appointment">BOOK AN APPOINTMENT</button>
+                    </span>
+                </div>
+                
+                <div id="aboutContent" class="content-section" style="display: none;">
+                  <span id="text2"><br>HI THERE! I'M PAOLA<br>
+                    I help my patients rebuild their relationship with food,
+                    movement and their body. </span><br>
+                    <span id="text3">I ́m a nutritionist specialized on eating disorders and disordered eating. I hold a Master  ́s
+                    degree in Eating Disorders and Clinical Nutrition from University College London, and I ́ve
+                    completeda training in enhanced cognitive therapy at the University of Oxford, as well as in
+                    intuitive eating at the London Centre for Intuitive Eating.<br><br></span>
+                    <span id="text2">I’ve been there.<br><br></span>
+                    <span id="text3">
+                    I have walked the same path that many of my patients are on. I haven’t always
+                    had a healthy relationship with food; I, too, battled with an eating disorder. At one point, I
+                    though I had it “under control”, but the truth was that the eating disorder was controlling my
+                    life. It wasn’t just restricting my food intake; it was stealing the joy from my life and occupying
+                    way too much space space in my mind.
+                    My unique perspective. My journey of overcoming an eating disorder, combined with my
+                    formal education, has given me a profound understanding and deep compassion for my
+                    patients. While no two experiences are the same and comparisons are often unhelpful, I want
+                    you to know that recovery it’s possible. it’s possible to make peace with food and your body,
+                    and to regain the joy in life that the disorder may have taken from you.
+                    Taking the first step. Reaching out for support takes immense courage. You might not be
+                    entirely sure of what you need right now, but you know that something isn’t quite right with
+                    your eating and your relationship with food. You’re in the right place to start your journey
+                    toward healing and recovery.
+                    Are you ready?</span><br><br>
+                    <button id="appointment">BOOK AN APPOINTMENT</button>
+                </div>
+                
+                <div id="consultationsContent" class="content-section" style="display: none;">
+                <span id="text3">
+                    <br>Wether you are suffering from an eating disorder or struggling
+                    with your relationship with food, I’m here to guide you through
+                    this transformative process. The treatment and sessions are
+                    tailored to your unique experience and where you are at the
+                    moment. During our consultations, we focus less on food itself,
+                    and more on helping you establish regular eating and eventually
+                    having a more natural relationship with food. The treatment
+                    evolves according to your progress. While having a healthy
+                    weight it’s important, it’s not the main focus of therapy. We work
+                    together to create balanced meals and appropriate portions.
+                    I I will accompany you through this transition with kindness and
+                    compassion. I provide a safe space for you to rebuild trust around
+                    food and your body. This is an ideal starting point for those
+                    who seek additional support. You recognize you deserve better
+                    and are taking that first step.</span><br><br>
+                    <button id="appointment">Individual session: €70</button>
+                </div>
+                <div id="foodcontentContent" class="content-section" style="display: none;">
+                    <span id="text3">
+                        <br>
+                    In this 10 week program, we go through the 10 principles of
+                    Intuitive Eating to make peace with food and your body.
+                    Through the program you will reconnect with your body ́s hunger
+                    and satiety signals, and we ́ll delve into gentle nutrition and
+                    movement. The program is designed for a small group (10
+                    participants), who are on the journey to break free from diet
+                    culture. It’s also an excellent option for clients who wish to revisit
+                    or build upon the work we’ve done in our 1:1 sessions.
+                    The next program begins on the February 10, 2024. You can
+                    apply now to secure your spot!
+
+                    </span>
+                    <br><br>
+                    <button id="appointment">Cost: €250 for 10 Weeks of Live Sessions.</button>
+                        <br>
+                        <span id="text4">
+                        <br>
+
+                    * Include session recordings, full text studies supporting IE
+                    Principles, working material and assignments, access to the
+                    WhatsApp community group.
+                            
+                    <div id="img">
+                        <img src="img/PAO_STILL_3.jpg">
+                        <img src="img/PAO_STILL_2.jpg">
+                        <img src="img/PAO_STILL_4.jpg">
+                    </div>
+                    </span>
+                </div>
+            </div> 
+        </div>
+    
+        <div class="row mx-0"> 
+            <div class="col-md-6" style="border-right: 2px solid #6c7ea4;border-bottom: 2px solid #6c7ea4;"> 
+                <button class="info-button" onclick="displayInfo('consultations',this)"><span class="bullet">⬤</span> CONSULTATIONS</button>
+            </div> 
+            <div class="col-md-6">
+            </div> 
+        </div>
+    
+    <div class="row mx-0"> 
+            <div class="col-md-6" style="border-right: 2px solid #6c7ea4;border-bottom: 2px solid #6c7ea4;"> 
+                <button class="info-button" onclick="displayInfo('foodcontent',this)"><span class="bullet">⬤</span> FOOD PROGRAM</button>
+            </div> 
+            <div class="col-md-6">
+            </div> 
+        </div>
+        
+     <div class="row mx-0"> 
+            <div class="col-md-6 custom-spacing" style="border-right: 2px solid #6c7ea4;"> 
+            </div> 
+        </div>
+        
+    <div class="fixed-bottom">
+        <button id="appointment2"><img src="img/CONTACT_1.png" width="18px" style="margin-top:-3px">5539446734</button>
+        <button id="appointment2"><img src="img/CONTACT_-02.png" width="22px" >paolaesquinca_nutricion</button>
+        
+    </div>
+        
+    <script>
+    function displayInfo(section, btnElement) {
+    // Hide all sections
+    document.querySelectorAll('.content-section').forEach(function(div) {
+        div.style.display = 'none';
+    });
+
+    // Show the selected section
+    var selectedContent = document.getElementById(section + 'Content');
+    if (selectedContent) {
+        selectedContent.style.display = 'block';
+    }
+
+    // Reset the color of all buttons to black
+    document.querySelectorAll('.info-button').forEach(function(btn) {
+        btn.style.color = 'black';
+    });
+
+    // Change the color of the clicked button to blue
+    btnElement.style.color = '#6c7ea4';
+        
+    var text = '';
+    switch(section) {
+        case 'home':
+            text = '';
+            break;
+        case 'about':
+            text = 'ABOUT';
+            break;
+        case 'consultations':
+            text = '1:1 CONSULTATIONS';
+            break;
+        case 'foodcontent':
+            text = 'MAKE PEACE WITH FOOD PROGRAM';
+            break;
+    }
+    document.getElementById('textHERE').innerHTML = text;
+}
+    </script>
+ 
+</body>
+</html>
