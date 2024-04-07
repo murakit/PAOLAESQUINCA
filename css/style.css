@@ -1,7 +1,21 @@
 body{
     overflow-x: hidden;
     overflow-y: hidden;
+    animation: fadeIn 1s ease-in-out forwards;
 }
+
+a {
+    color: black;
+    text-decoration: none;
+    transition: border-bottom 0.3s;
+    line-height: 1.2; /* Adjust as needed */
+}
+
+a:hover {
+    border-bottom: 1px solid black;
+    padding-bottom: 0; /* Adjust as needed */
+}
+
 
 .vertical-line { 
     border-right: 1px solid #6c7ea4 !important; 
@@ -49,7 +63,7 @@ button {
 #appointment {
    border: 2px solid #6c7ea4;
    border-radius: 10px;
-   padding: 8;
+   padding: 5;
 }
 
 #appointment2 {
@@ -70,13 +84,19 @@ color: #6c7ea4;
 font-size: 2vh;
 }
 
+#homeContent {
+ animation: fadeIn 1s ease-in-out forwards;
+
+}
+
 #aboutContent {
    right:0; 
    text-align: right !important;
    overflow:scroll; 
-       overflow-x:hidden; 
-
+    overflow-x:hidden; 
     height:80vh;
+    animation: fadeIn 1s ease-in-out forwards;
+
 }
 
 #consultationsContent{
@@ -84,7 +104,7 @@ font-size: 2vh;
    text-align: right !important;
    overflow:scroll; 
     overflow-x:hidden; 
-
+    animation: fadeIn 1s ease-in-out forwards;
     height:80vh;
 }
 
@@ -93,8 +113,20 @@ font-size: 2vh;
    text-align: right !important;
    overflow:scroll; 
     overflow-x:hidden; 
+    animation: fadeIn 1s ease-in-out forwards;
 
     height:90vh;  
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    
+    to {
+        opacity: 1;
+    }
 }
 
 .bullet {
@@ -115,4 +147,10 @@ font-size: 2.8vh;
      color: #6c7ea4;
 font-size: 2.8vh;
 
+}
+
+.button01 {
+    position: absolute;
+    width: 20%;
+    margin: 16%;
 }
