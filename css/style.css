@@ -1,6 +1,7 @@
 body{
     overflow-x: hidden;
     overflow-y: hidden;
+
     animation: fadeIn 1s ease-in-out forwards;
 }
 
@@ -36,18 +37,28 @@ a:hover {
     padding: 2vh;
 }
 
+
+
 @font-face {
   font-family: myFirstFont;
   src: url(HelveticaNeue.ttf);
 }
 
 * {
-  font-family: myFirstFont;
+  font-family: myFirstFont !important;
 }
 
 #text1{
    font-family: myFirstFont;
+   color: #6c7ea4;
 }
+
+#text0{
+    font-family: myFirstFont;
+    color: #6c7ea4;
+    text-align: center;
+    font-size: 2vh;
+ }
 
 button {
     background: none;
@@ -57,13 +68,16 @@ button {
 }
 
 #foto {
-    border: 2px solid #6c7ea4;
+    border-top: 2px solid #6c7ea4;
+    border-bottom: 2px solid #6c7ea4;
 }
 
 #appointment {
    border: 2px solid #6c7ea4;
    border-radius: 10px;
    padding: 5;
+   font-family: myFirstFont;
+
 }
 
 #appointment2 {
@@ -72,11 +86,12 @@ button {
    padding: 7;
     margin: 1.5%;
     font-size: 1.8vh;
+    background-color: white;
 }
 
 #text2 {
  color: #6c7ea4;
-font-size: 3vh;
+font-size: 3.5vh;
 }
 
 #text4 {
@@ -84,9 +99,34 @@ color: #6c7ea4;
 font-size: 2vh;
 }
 
-#homeContent {
- animation: fadeIn 1s ease-in-out forwards;
+#texrnewdiv {
+    text-align: right;
+    margin-bottom: 20%;
+    padding: 2%;
+}
 
+#textnew {
+    color: #6c7ea4;
+    font-size: 2vh;
+    }
+
+#homeContent {
+    position: relative;    
+    animation: fadeIn 1s ease-in-out forwards;
+    overflow:scroll !important; 
+    overflow-x:hidden; 
+    height:90vh;
+}
+
+#homeContent1 {
+    right:0; 
+    text-align: right !important;
+    overflow:scroll; 
+     overflow-x:hidden; 
+     height:80vh;
+     animation: fadeIn 1s ease-in-out forwards;
+     
+ 
 }
 
 #aboutContent {
@@ -94,9 +134,10 @@ font-size: 2vh;
    text-align: right !important;
    overflow:scroll; 
     overflow-x:hidden; 
-    height:80vh;
+    height:83vh;
     animation: fadeIn 1s ease-in-out forwards;
-
+    padding: 4%;
+ 
 }
 
 #consultationsContent{
@@ -106,6 +147,8 @@ font-size: 2vh;
     overflow-x:hidden; 
     animation: fadeIn 1s ease-in-out forwards;
     height:80vh;
+    padding: 2%;
+
 }
 
 #foodcontentContent{
@@ -114,10 +157,24 @@ font-size: 2vh;
    overflow:scroll; 
     overflow-x:hidden; 
     animation: fadeIn 1s ease-in-out forwards;
-
     height:90vh;  
+    
 }
 
+
+._3efP_GeH5kyBAzqnLzL.cllbjvXCdYDt9A3te4cz {
+    display: flex;
+    flex: 1 1 auto;
+    max-width: 800px;
+    min-height: 550px;
+    transition: all .22s ease-out;
+    font-family: myFirstFont;
+}
+
+p {
+    font-family: myFirstFont;
+
+}
 
 @keyframes fadeIn {
     from {
@@ -153,4 +210,17 @@ font-size: 2.8vh;
     position: absolute;
     width: 20%;
     margin: 16%;
+}
+
+.calendly-inline-widget iframe, .calendly-badge-widget iframe, .calendly-overlay iframe {
+    font-family: myFirstFont;
+}
+
+.WrdpezlzjKu1CoRihaXS.y2BHUjkNYLaMI5GB_dVt {
+    width: 50%;
+    min-width: 300px;
+    border-right: 1px solid var(--text-color-level3, rgba(26, 26, 26, 0.1));
+    transition: all .22s ease-out;
+    font-family: myFirstFont;
+
 }

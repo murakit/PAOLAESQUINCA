@@ -6,6 +6,8 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
       <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js" integrity="sha512-X/YkDZyjTf4wyc2Vy16YGCPHwAY8rZJY+POgokZjQB2mhIRFJCckEGc6YyX9eNsPfn0PzThEuNs+uaomE5CO6A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
       <link rel="stylesheet" href="css/style.css">
+      <link rel="icon" href="img/logo-copy.png">
+
       </head>
 
     <body>
@@ -16,7 +18,7 @@
               PAOLA ESQUINCA
             </div>
             <!-- Centered Logo -->
-            <img src="img/logo.jpg" alt="Logo" class="img-fluid" style="max-height: 40px;">
+            <img src="img/logo.jpg" alt="Logo" class="img-fluid" style="max-height: 40px;margin-right: 54px;cursor: pointer;" onclick="redirectToPage()">
             <!-- Right Text aligned to right -->
             <div class="ms-auto ps-2">
               NUTRITION
@@ -36,23 +38,45 @@
             <div class="col-md-6" style="border-right: 2px solid #6c7ea4;border-bottom: 2px solid #6c7ea4;"> 
                 <button class="info-button" onclick="displayInfo('about', this)"> <span class="bullet">⬤</span> ABOUT</button>
             </div> 
+            </div>
+
             <div id="info" class="col-md-6" >
+                
                 <div id="homeContent" class="content-section" style="display: block;">
-                    <span id="text1">
-                       WELCOME I’M PAOLA AND I’M HERE TO HELP YOU REBUILD YOUR RELATIONSHIP WITH FOOD.<br>
-                    <img id="foto" src="img/paola.jpg" width="140vh" style="margin:10%;"><br>
-                    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-                    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-                    <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/cadri-macias/appointment'});return false;" id="appointment">                    
-                       BOOK AN APPOINTMENT
-                        </a>
-                    </span>
+                    
+                    <div id="title" style="padding: 2px;text-align: center;">
+                    <span id="text0">
+                       WELCOME I’M PAOLA AND I’M HERE TO HELP YOU REBUILD YOUR RELATIONSHIP WITH FOOD.</span>
+                    </div>
+
+                    <div id="img">
+                        <img id="foto" src="img/PHOTO-2024-04-16-12-24-35.jpg" width="100%" style="margin-top:3%;"></div>
+                    
+                        <div id="title" style="padding: 2px;text-align: center;">
+                            <span id="text0">
+                        <br>TESTIMONIALS 
+                        </span>
+                        </div>
+
+                        <div id="texrnewdiv">
+                        <span id="text3">
+                            <br>
+                            "I always felt heard and comfortable in the consultations with Paola. I learnt to love the process and all the changes within that made my life better. Now I have many tools and strategies that I can use on my daily life."
+                            <br>
+                            - Karla<br><br>
+                            "Paola is an excellent professional. Thanks to her support, I’m now able to take care of myself without having extreme behaviors. She has helped me to feel more at peace with food and enjoy going out with friends, family lunches, and trips."
+                            <br>- Claudia<br><br>
+                            "Throughout my nutritional consultations with Paola I have started to heal my relationship with food. She’s helped me acquire tools to reduce and manage binge eating episodes, as well as avoid disordered eating. I feel much more nourished and in tune with my body now.
+                            <br>- Aranza 
+                        </span>
+                        </div>
+                </span>  
                 </div>
                 
                 <div id="aboutContent" class="content-section" style="display: none;">
-                  <span id="text2"><br>HI THERE! I'M PAOLA<br>
+                  <span id="text2"><br>HI THERE! I'M PAOLA<br><br>
                     I help my patients rebuild their relationship with food,
-                    movement and their body. </span><br>
+                    movement and their body. </span><br><br>
                     <span id="text3">I ́m a nutritionist specialized on eating disorders and disordered eating. I hold a Master  ́s
                     degree in Eating Disorders and Clinical Nutrition from University College London, and I ́ve
                     completeda training in enhanced cognitive therapy at the University of Oxford, as well as in
@@ -63,18 +87,31 @@
                     had a healthy relationship with food; I, too, battled with an eating disorder. At one point, I
                     though I had it “under control”, but the truth was that the eating disorder was controlling my
                     life. It wasn’t just restricting my food intake; it was stealing the joy from my life and occupying
-                    way too much space space in my mind.
+                    way too much space space in my mind.<br><br>
                     My unique perspective. My journey of overcoming an eating disorder, combined with my
                     formal education, has given me a profound understanding and deep compassion for my
                     patients. While no two experiences are the same and comparisons are often unhelpful, I want
                     you to know that recovery it’s possible. it’s possible to make peace with food and your body,
                     and to regain the joy in life that the disorder may have taken from you.
-                    Taking the first step. Reaching out for support takes immense courage. You might not be
+                        </span>
+
+
+                     <span id="text2"><br><br>Taking the first step. </span>
+                    
+                     <span id="text3">
+                    <br><br>
+                    Reaching out for support takes immense courage. You might not be
                     entirely sure of what you need right now, but you know that something isn’t quite right with
                     your eating and your relationship with food. You’re in the right place to start your journey
                     toward healing and recovery.
                     Are you ready?</span><br><br>
-                    <button id="appointment">BOOK AN APPOINTMENT</button>
+                    <div class="appointment">       
+                        <!-- Calendly link widget begin -->
+                        <a href="https://app.acuityscheduling.com/schedule.php?owner=32298337&ref=booking_button" target="_blank" class="acuity-embed-button" style="background: white; color: black; padding: 8px 12px;border: 2px solid #6c7ea4;border-radius: 20px;
+                                    -webkit-box-shadow: 0 -2px 0 rgba(0,0,0,0) inset;-moz-box-shadow: 0 -2px 0 rgba(0,0,0,0) inset;box-shadow: 0 -2px 0 rgba(0,0,0,0) inset;border-radius: 10px; text-decoration: none; display: inline-block;">BOOK AN APPOINTMENT</a>
+                        <link rel="stylesheet" href="https://embed.acuityscheduling.com/embed/button/32298337.css" id="acuity-button-styles" /><script src="https://embed.acuityscheduling.com/embed/button/32298337.js" async></script>
+                    </div>
+                     <br><br><br><br>
                 </div>
                 
                 <div id="consultationsContent" class="content-section" style="display: none;">
@@ -94,9 +131,16 @@
                     food and your body. This is an ideal starting point for those
                     who seek additional support. You recognize you deserve better
                     and are taking that first step.</span><br><br>
-                    <button id="appointment">Individual session: €70</button>
+                    <div class="appointment">       
+                        <!-- Calendly link widget begin -->
+                        <a href="https://app.acuityscheduling.com/schedule.php?owner=32298337&ref=booking_button" target="_blank" class="acuity-embed-button" style="background: white; color: black; padding: 8px 12px;border: 2px solid #6c7ea4;border-radius: 20px;
+                                    -webkit-box-shadow: 0 -2px 0 rgba(0,0,0,0) inset;-moz-box-shadow: 0 -2px 0 rgba(0,0,0,0) inset;box-shadow: 0 -2px 0 rgba(0,0,0,0) inset;border-radius: 10px; text-decoration: none; display: inline-block;">Individual session: 75€ </a>
+                        <link rel="stylesheet" href="https://embed.acuityscheduling.com/embed/button/32298337.css" id="acuity-button-styles" /><script src="https://embed.acuityscheduling.com/embed/button/32298337.js" async></script>
+                    </div>
                 </div>
+
                 <div id="foodcontentContent" class="content-section" style="display: none;">
+                    <div style="padding: 2%;">
                     <span id="text3">
                         <br>
                     In this 10 week program, we go through the 10 principles of
@@ -110,7 +154,7 @@
                     The next program begins on the February 10, 2024. You can
                     apply now to secure your spot!
 
-                    </span>
+                    </span></div>
                     <br><br>
                     <button id="appointment"><link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
                         <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
@@ -133,7 +177,7 @@
                     </span>
                 </div>
             </div> 
-        </div>
+   
     
         <div class="row mx-0"> 
             <div class="col-md-6" style="border-right: 2px solid #6c7ea4;border-bottom: 2px solid #6c7ea4;"> 
@@ -153,12 +197,9 @@
 
         <div class="button01">       
             <!-- Calendly link widget begin -->
-            <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-            <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-            <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/cadri-macias/appointment'});return false;" id="appointment">                    
-               BOOK APPOINTMENT
-                </a>
-            <!-- Calendly link widget end -->
+            <a href="https://app.acuityscheduling.com/schedule.php?owner=32298337&ref=booking_button" target="_blank" class="acuity-embed-button" style="background: white; color: black; padding: 8px 12px;border: 2px solid #6c7ea4;border-radius: 20px;
+                        -webkit-box-shadow: 0 -2px 0 rgba(0,0,0,0) inset;-moz-box-shadow: 0 -2px 0 rgba(0,0,0,0) inset;box-shadow: 0 -2px 0 rgba(0,0,0,0) inset;border-radius: 10px; text-decoration: none; display: inline-block;">BOOK AN APPOINTMENT</a>
+            <link rel="stylesheet" href="https://embed.acuityscheduling.com/embed/button/32298337.css" id="acuity-button-styles" /><script src="https://embed.acuityscheduling.com/embed/button/32298337.js" async></script>
         </div>
         
         
@@ -169,12 +210,18 @@
 
      
     <div class="fixed-bottom">
-        <button id="appointment2"><img src="img/CONTACT_1.png" width="26px" style="margin-top:-3px">5539446734</button>
-        <button id="appointment2"><img src="img/CONTACT_-02.png" width="22px" >paolaesquinca_nutricion</button>
-        
+        <button id="appointment2">
+            <img src="img/tiktok-logo-tikok-icon-transparent-tikok-app-logo-free-png.webp" width="22px" >
+            <img src="img/CONTACT_-02.png" width="22px" >
+            paolaesquinca_nutricion</button>
     </div>
         
     <script>
+
+    function redirectToPage() {
+        window.location.href = "index.html";
+    }
+
     function displayInfo(section, btnElement) {
     // Hide all sections
     document.querySelectorAll('.content-section').forEach(function(div) {
